@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html {
+    overflow: auto;
+}
+
+body {
+    background-color: #121613;
+    overflow: hidden;
+    scrollbar-gutter: both;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.navbar h1 {
+    margin-left: 30px;
+    background: linear-gradient(to right, #fffefe, #bdb2b2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    right: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar #nav .ulnav {
+    padding: 5px;
+
+    display: flex;
+
+    align-items: center;
+
+    border-radius: 100px;
+
+    width: 800px;
+    background: #1d1b1b;
+    box-shadow: 0px 5px 20px #0000002f;
+}
+
+.navbar #nav .ulnav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar #nav .ulnav div {
+    display: flex;
+}
+
+.navbar #nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar #nav .ulnav ul li {
+    list-style: none;
+}
+
+.navbar #nav ul li a {
+    padding: 10px 30px;
+    margin: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar #nav ul li a:hover {
+    background-color: #c24141;
+    border-radius: 25px;
+    transition: 1s;
+}
+
+.navbar #nav ul li:nth-child(1) a {
+    background-color: #c24141;
+    border-radius: 25px;
+}
+
+#sidebar {
+    color: #121613;
+    display: none;
+}
+
+#menu i {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar .ulnav button {
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background: #1b1b1b;
+    box-shadow: 0px 5px 20px #0000002f;
+    margin-right: 2px;
+    position: relative;
+
+    color: #fff;
+}
+
+.navbar .ulnav button:hover {
+    background-color: #c24141;
+    border: 2px solid #c24141;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+/* home */
+#home {
+    height: 725px;
+    width: 100%;
+}
+
+#home #firstf p {
+    position: relative;
+    top: 100px;
+    left: 10%;
+    color: rgb(248, 225, 94);
+    display: inline-block;
+}
+
+
+
+#home div h1 {
+    position: relative;
+    top: 120px;
+    left: 10%;
+    background: linear-gradient(to right, #fffefe, #bdb2b2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem;
+    line-height: 90px;
+    display: inline-block;
+}
+
+#home #secondf p {
+    position: relative;
+    top: 130px;
+    left: 10%;
+    width: 500px;
+    color: #fff;
+    line-height: 30px;
+}
+
+#home #bank {
+    position: relative;
+    left: 50%;
+    bottom: 21.5em;
+}
+
+#home #bank img {
+    width: 600px;
+}
+
+#home #secondf #btn button {
+    position: relative;
+    top: 160px;
+    left: 10%;
+    padding: 10px 50px;
+    border-radius: 25px;
+    border: none;
+    font-weight: 500;
+    box-shadow: 0px 5px 20px #3b3a3a;
+}
+
+#home #secondf #btn button:hover {
+    box-shadow: 0px 5px 20px #cccccc2f;
+}
+
+/* Information Boxes  */
+#infoBox {
+    height: 1000px;
+    width: 100%;
+}
+
+#infoBox #box-1 {
+    width: 1250px;
+    height: 210px;
+    padding: 20px;
+    display: flex;
+    border: 1px solid #3b3a3a;
+    border-radius: 60px;
+    gap: 20px;
+    position: relative;
+    top: -50px;
+    left: 7%;
+    background: #1d1b1b;
+    box-shadow: 0px 5px 20px #0000002f;
+}
+
+#infoBox #box-1:hover {
+    box-shadow: 0px 5px 20px #cccccc2f;
+    transition: 1s ease-in-out;
+
+}
+
+#infoBox #box-1 #info p {
+    position: relative;
+    top: 10px;
+    left: 4.3%;
+    color: rgb(248, 225, 94);
+}
+
+#infoBox #box-1 #speed img {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 60px;
+    left: 4.3%;
+    margin: 0px 20px;
+}
+
+#infoBox #box-1 #speed h4 {
+    position: absolute;
+    top: 110px;
+    left: 4.3%;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 0.2cap;
+    margin: 0px 20px;
+}
+
+#infoBox #box-1 #speed p {
+    position: absolute;
+    top: 130px;
+    left: 4.3%;
+    width: 250px;
+    color: #fff;
+    margin: 0px 20px;
+}
+
+#infoBox #box-1 #security img {
+    height: 40px;
+    width: 50px;
+    position: absolute;
+    top: 60px;
+    left: 25.3%;
+    margin: 0px 50px;
+}
+
+#infoBox #box-1 #security h4 {
+    position: absolute;
+    top: 110px;
+    left: 25.3%;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 0.2cap;
+    margin: 0px 50px;
+}
+
+#infoBox #box-1 #security p {
+    position: absolute;
+    top: 130px;
+    left: 25.3%;
+    width: 250px;
+    color: #fff;
+    margin: 0px 50px;
+}
+
+#infoBox #box-1 #trans img {
+    height: 40px;
+    width: 60px;
+    position: absolute;
+    top: 60px;
+    left: 50.3%;
+    margin: 0px 50px;
+}
+
+#infoBox #box-1 #trans h4 {
+    position: absolute;
+    top: 110px;
+    left: 50.3%;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 0.2cap;
+    margin: 0px 50px;
+}
+
+#infoBox #box-1 #trans p {
+    position: absolute;
+    top: 130px;
+    left: 50.3%;
+    width: 250px;
+    color: #fff;
+    margin: 0px 50px;
+}
+
+#infoBox #box-1 #inBox {
+    height: 120px;
+    width: 400px;
+    border-radius: 25px;
+    position: absolute;
+    top: 25px;
+    left: 73%;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0px 5px 20px #3b3a3a;
+}
+
+#infoBox #box-1 #inBox:hover {
+    box-shadow: 0px 5px 20px #606060;
+    transition: 1s ease-in-out;
+    transform: scale(-5px);
+}
+
+#infoBox #box-1 #inBox #img-1 {
+    height: 70px;
+    width: 60px;
+    border-radius: 30%;
+    background-color: #d4cbcb;
+    position: relative;
+    top: 18px;
+    left: 2%;
+}
+
+#infoBox #box-1 #inBox #name {
+    color: #121613;
+    font-size: 10px;
+    position: relative;
+    left: 7%;
+    top: 20px;
+    font-size: 10px;
+}
+
+#infoBox #box-1 #inBox p {
+    position: relative;
+    top: 45px;
+    right: 7%;
+    color: #121613;
+    font-size: 12px;
+}
+
+#infoBox #box-1 #inBox #img-2 {
+    height: 45px;
+    width: 100px;
+    position: absolute;
+    bottom: 0px;
+    right: 0%;
+}
+
+/* box no 2 */
+#infoBox #box-2 {
+    width: 800px;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    border-radius: 60px;
+    gap: 20px;
+    position: relative;
+    top: -20px;
+    left: 7%;
+    background: #1d1b1b;
+    box-shadow: 0px 5px 20px #0000002f;
+    border: 1px solid #3b3a3a;
+}
+
+#infoBox #box-2:hover {
+    box-shadow: 0px 5px 20px #606060;
+    transition: 1s ease-in-out;
+    transform: scale(-5px);
+}
+
+#infoBox #box-2 #bag img {
+    height: 270px;
+    position: absolute;
+    left: -50px;
+}
+
+#infoBox #box-2 #save {
+    position: relative;
+    top: 50px;
+    left: 29%;
+    color: rgb(248, 225, 94);
+}
+
+#infoBox #box-2 #para {
+    position: absolute;
+    top: 130px;
+    left: 30%;
+    width: 400px;
+    color: #fff;
+    margin: 0px 20px;
+}
+
+#infoBox #box-2 #r-icon {
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 35px;
+    font-weight: 100;
+    opacity: 0.4;
+}
+
+#infoBox #box-3 {
+    width: 800px;
+    height: 350px;
+    padding: 20px;
+    display: flex;
+
+    border-radius: 60px;
+    gap: 20px;
+    position: relative;
+    top: 10px;
+    left: 7%;
+    background: #1d1b1b;
+    box-shadow: 0px 5px 20px #0000002f;
+    border: 1px solid #3b3a3a;
+}
+
+#infoBox #box-3:hover {
+    box-shadow: 0px 5px 20px #606060;
+    transition: 1s ease-in-out;
+    transform: scale(-5px);
+}
+
+#infoBox #box-3 #user {
+    position: relative;
+    top: 70px;
+    left: 4%;
+    color: rgb(248, 225, 94);
+}
+
+#infoBox #box-3 #para-2 {
+    position: absolute;
+    top: 150px;
+    left: 4%;
+    width: 300px;
+    color: #fff;
+    margin: 0px 20px;
+}
+
+#infoBox #box-3 #phone img {
+    position: absolute;
+    top: 30px;
+    right: 1px;
+}
+
+#infoBox #box-3 #d-icon {
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 4%;
+    font-weight: 100;
+    opacity: 0.4;
+}
+
+#infoBox #box-4 {
+    width: 400px;
+    height: 675px;
+    padding: 20px;
+    display: flex;
+
+    border-radius: 60px;
+    gap: 20px;
+    position: relative;
+    bottom: 700px;
+    left: 64%;
+    background: #1d1b1b;
+    box-shadow: 0px 5px 20px #0000002f;
+    border: 1px solid #3b3a3a;
+}
+
+#infoBox #box-4:hover {
+    box-shadow: 0px 5px 20px #606060;
+    transition: 1s ease-in-out;
+    transform: scale(-5px);
+}
+
+#infoBox #box-4 #launch {
+    position: relative;
+    top: 50px;
+    left: 4%;
+    color: rgb(248, 225, 94);
+}
+
+#infoBox #box-4 #para-3 {
+    position: absolute;
+    top: 130px;
+    left: 4%;
+    width: 300px;
+    color: #fff;
+    margin: 0px 20px;
+
+}
+
+#infoBox #box-4 #rocket {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+}
+
+#infoBox #box-4 #l-icon {
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    bottom: 6px;
+    left: 4%;
+    font-weight: 100;
+    opacity: 0.4;
+}
+
+footer {
+    height: 405px;
+    width: 100%;
+    background: #1d1b1b;
+
+    position: relative;
+    top: 150px;
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#first {
+    width: 60%;
+    position: relative;
+    left: 10%;
+    gap: 20px;
+}
+
+#first h3 {
+    color: rgb(248, 225, 94);
+    width: 80%;
+
+}
+
+#first p {
+    color: #fff;
+}
+
+#second {
+    width: 40%;
+    position: relative;
+    top: 20px;
+    gap: 20px;
+
+}
+
+#second h3 {
+    color: rgb(248, 225, 94);
+}
+
+#second ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.footer-section h3 {
+    padding: 10px 0px;
+    font-weight: 500;
+    color: #181818;
+}
+
+
+
+.footer-section ul li {
+    list-style: none;
+}
+
+.footer-section ul li a {
+    color: #005354;
+}
+
+#first p {
+    padding: 10px 0px;
+    width: 80%;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #121613;
+    position: relative;
+    top: 50px;
+
+}
+
+.lastdiv {
+    padding-bottom: 80px;
+}
+
+.copyright p {
+    font-weight: 400;
+}
+
+.copyright span {
+    color: rgb(248, 225, 94);
+    font-weight: 500;
+}
